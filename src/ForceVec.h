@@ -33,7 +33,7 @@ public:
 
 public:
 	ForceVec():
-		fv_()
+		fv_(vector6_t::Zero())
 	{}
 
 	/// @param vec Spatial force vector with couple in head and force in tail.
@@ -114,6 +114,9 @@ public:
 
 private:
 	vector6_t fv_;
+
+public:
+  EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
 
 template<typename T, typename T2>

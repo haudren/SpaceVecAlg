@@ -33,7 +33,7 @@ public:
 
 public:
 	MotionVec():
-		mv_()
+		mv_(vector6_t::Zero())
 	{}
 
 	/**
@@ -127,6 +127,9 @@ public:
 
 private:
 	vector6_t mv_;
+
+public:
+	EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
 
 template<typename T, typename T2>

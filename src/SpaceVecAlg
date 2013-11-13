@@ -21,6 +21,7 @@
 // eigen
 #include <Eigen/Core>
 #include <Eigen/Geometry>
+#include <Eigen/StdVector>
 
 // utility
 #include "EigenTypedef.h"
@@ -52,3 +53,9 @@ namespace sva
 	typedef ABInertia<double> ABInertiad;
 	typedef PTransform<double> PTransformd;
 }
+
+EIGEN_DEFINE_STL_VECTOR_SPECIALIZATION(sva::MotionVecd)
+EIGEN_DEFINE_STL_VECTOR_SPECIALIZATION(sva::ForceVecd)
+EIGEN_DEFINE_STL_VECTOR_SPECIALIZATION(sva::RBInertiad)
+EIGEN_DEFINE_STL_VECTOR_SPECIALIZATION(sva::ABInertiad)
+EIGEN_DEFINE_STL_VECTOR_SPECIALIZATION(sva::PTransformd)
