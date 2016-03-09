@@ -1,0 +1,41 @@
+Source: spacevecalg
+Priority: optional
+Maintainer: Pierre Gergondet <pierre.gergondet+ppa@gmail.com>
+Standards-Version: 3.9.5
+Section: libdevel
+Homepage: http://github.com/jrl-umi3218/SpaceVecAlg
+Vcs-Git: git://github.com/jrl-umi3218/SpaceVecAlg -b debian
+Vcs-Browser: http://github.com/jrl-umi3218/SpaceVecAlg
+Build-Depends: debhelper (>= 9),
+               pkg-config,
+               cmake,
+               doxygen,
+               libboost-test-dev,
+               libboost-timer-dev,
+               libboost-system-dev,
+               libeigen3-dev (>= 3.2)
+
+Package: libspacevecalg-dev
+Section: libdevel
+Architecture: any
+Depends: pkg-config,
+         ${misc:Depends}
+Suggests: libspacevecalg-doc
+Description: SpaceVecAlg: Spatial Vector Algebra with Eigen
+ SpaceVecAlg aim to implement Spatial Vector Algebra with the Eigen3 linear
+ algebra library.
+ .
+ All this implementation is based on appendix A of [Roy Featherstone Rigid Body
+ Dynamics Algorithms book](http://www.springer.com/fr/book/9780387743141).
+
+Package: libspacevecalg-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Suggests: libspacevecalg-dev
+Description: SpaceVecAlg API documentation
+ SpaceVecAlg aim to implement Spatial Vector Algebra with the Eigen3 linear
+ algebra library.
+ .
+ This package provides the complete API documentation in HTML format.
