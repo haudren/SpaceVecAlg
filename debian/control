@@ -22,7 +22,7 @@ Depends: pkg-config,
          ${misc:Depends}
 Suggests: libspacevecalg-doc
 Description: SpaceVecAlg: Spatial Vector Algebra with Eigen
- SpaceVecAlg aim to implement Spatial Vector Algebra with the Eigen3 linear
+ SpaceVecAlg aims to implement Spatial Vector Algebra with the Eigen3 linear
  algebra library.
  .
  All this implementation is based on appendix A of [Roy Featherstone Rigid Body
@@ -35,7 +35,7 @@ Depends: ${misc:Depends}
 Multi-Arch: foreign
 Suggests: libspacevecalg-dev
 Description: SpaceVecAlg API documentation
- SpaceVecAlg aim to implement Spatial Vector Algebra with the Eigen3 linear
+ SpaceVecAlg aims to implement Spatial Vector Algebra with the Eigen3 linear
  algebra library.
  .
  This package provides the complete API documentation in HTML format.
