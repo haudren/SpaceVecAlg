@@ -1,3 +1,9 @@
+spacevecalg (1.0.1-1ubuntu2) unstable; urgency=medium
+
+  * Add Python bindings to the package
+
+ -- Pierre Gergondet <pierre.gergondet+ppa@gmail.com>  Fri, 09 Jun 2017 11:54:54 +0900
+
 spacevecalg (1.0.1-1ubuntu1) trusty; urgency=low
 
   * Upstream update fix versioning

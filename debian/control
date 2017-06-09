@@ -13,7 +13,9 @@ Build-Depends: debhelper (>= 9),
                libboost-test-dev,
                libboost-timer-dev,
                libboost-system-dev,
-               libeigen3-dev (>= 3.2)
+               libeigen3-dev (>= 3.2),
+               python-eigen,
+               python3-eigen
 
 Package: libspacevecalg-dev
 Section: libdevel
@@ -39,3 +41,17 @@ Description: SpaceVecAlg API documentation
  algebra library.
  .
  This package provides the complete API documentation in HTML format.
+
+Package: python-spacevecalg
+Section: python
+Architecture: any
+Depends: ${python:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Description: SpaceVecAlg Python bindings
+ Python bindings for the SpaceVecAlg library. Compatible with Python 2.
+
+Package: python3-spacevecalg
+Section: python
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Description: SpaceVecAlg Python bindings
+ Python bindings for the SpaceVecAlg library. Compatible with Python 3.
