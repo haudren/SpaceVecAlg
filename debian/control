@@ -57,13 +57,13 @@ Description: SpaceVecAlg API documentation
 Package: python-spacevecalg
 Section: python
 Architecture: any
-Depends: ${python:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Depends: ${python:Depends}, ${misc:Depends}, ${shlibs:Depends}, python-eigen
 Description: SpaceVecAlg Python bindings
  Python bindings for the SpaceVecAlg library. Compatible with Python 2.
 
 Package: python3-spacevecalg
 Section: python
 Architecture: any
-Depends: ${python3:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Depends: ${python3:Depends}, ${misc:Depends}, ${shlibs:Depends}, python3-eigen
 Description: SpaceVecAlg Python bindings
  Python bindings for the SpaceVecAlg library. Compatible with Python 3.
